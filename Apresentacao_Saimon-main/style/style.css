@@ -115,11 +115,15 @@ body{
     border-radius: 4.5rem;
     
 }
-
-.linkedin-link{
+.linkedin-foto{
     text-align: center;
-    border: 2px solid red;
-    
+    box-shadow: 8px grey;
+}
+
+@media screen and (max-width: 400px) {
+    .linkedin-link img {
+        display: none;
+    }
 }
 
 .foto:hover{
