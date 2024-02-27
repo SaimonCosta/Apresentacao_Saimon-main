@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+</head>
+
+<body>
+    <div id="your-element-selector"></div>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu"> 
+            <a class="cabecalho__menu__link" href="./index.html"> Home </a>
+            <a class="cabecalho__menu__link" href="./about.html"> Sobre Mim </a>
+            <a class="cabecalho__menu__link" href="./Curriculo.html"> Meu currículo</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
+            class="titulo-destaque"> com um Front-end de qualidade!
+            </strong></h1>
+            <p class="apresentacao__conteudo__texto">Olá! Sou Saimon Costa, desenvolvedor
+            Front-end com especialidade em React, HTML e
+            CSS. Ajudo pequenos negócios e designers a
+            colocarem em prática boas ideias. Vamos
+            conversar?</p>
+        <div class="apresentacao__links">
+                <h2 class="apresentacao__subtitulo"> Acesse minhas redes :</h2>
+
+            <a class="apresentacao__links__link" href="https://Github.com/SaimonCosta"> 
+                <img src="./assets/github.png" alt="Github"> 
+                Github
+            </a>
+            <a class="apresentacao__links__link" href="https://www.linkedin.com/in/saimon-costa/"><img src="./assets/linkedin.png">
+                Linkedin
+                </a>
+            <a class="apresentacao__links__link" href="https://twitter.com/SaimonCosta22"><img src="./assets/twitter.png">
+            Twitter
+            </a>   
+        </div>  
+        </section>
+        <img class="foto" src="./assets/Saimon.png">
+        
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Saimon Costa</p>
+    </footer>
+
+    <script>
+        // Inicialize o efeito Vanta.js como fundo da página
+        VANTA.NET({
+  el: "#your-element-selector",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x553fff,
+  backgroundColor: 0x0
+})
+    </script>
+</body>
+
+</html>
