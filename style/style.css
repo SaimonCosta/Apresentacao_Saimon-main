@@ -175,9 +175,17 @@ body{
     margin: 0px 0px 5% 50px ;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .linkedin-link img {
         display: none;
+    }
+    #menu-button{
+      border-radius: 8px;
+      font-size: 1.4rem;
+      padding: 3.5px;
+      font-family: var(--fonte-secundaria);
+      margin-left: 20px;
+      
     }
 }
 
@@ -205,13 +213,11 @@ body{
 }
 
 .rodape{
-    background-color: var(--cor-terciaria);
+    background-color: #40A2D8;
     text-align: center;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-    padding: 24px;
-    font-size: 24px;
-    font-weight: 400;
+    font-family: var(--fonte-primaria);
+    padding: 10px;
+    font-size: 15px;
 }
 
 
@@ -249,7 +255,7 @@ body{
     width: 100%;
     height: auto;
    }
-}
+
 
 .border-menu{
     border: 3px solid #E2E8F0;
@@ -286,18 +292,19 @@ body{
 
   }
 
-  #menu{
+#menu{
     display: none;
-  }
+}
 
-  #menu-button{
-    border-radius: 15px;
-    font-size: 1.8rem;
-    padding: 2px;
+#menu-button{
+    border-radius: 8px;
+    font-size: 1.4rem;
+    padding: 3.5px;
     font-family: var(--fonte-secundaria);
     
-  }
+}
 
-  #menu-button:hover{
-    background-color: #F0EDCF;
-  }
+#menu-button:hover{
+    transition: 1s;
+    font-size: 1.5rem;
+}}
