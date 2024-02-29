@@ -106,10 +106,11 @@ body{
     font-family: var(--fonte-secundaria); 
     font-size: 18px;
     font-weight: 500;
-    color:var(--cor-terciaria);
+    color: white;
     margin-right: 30px;
     text-decoration: none;
     padding: 15px 0;
+    box-shadow:2px  #000000;
 
 }
 
@@ -171,7 +172,7 @@ body{
 }
 .linkedin-foto{
     text-align: center;
-    margin: 0px 0px 30% 50px ;
+    margin: 0px 0px 5% 50px ;
 }
 
 @media screen and (max-width: 400px) {
@@ -291,8 +292,9 @@ body{
 
   #menu-button{
     border-radius: 15px;
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 1.8rem;
+    padding: 2px;
+    font-family: var(--fonte-secundaria);
     
   }
 
