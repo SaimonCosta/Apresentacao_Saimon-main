@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var navList = document.getElementById('nav-list');
   
     button.addEventListener('click', function() {
-      // Alternar a visibilidade da lista de navegação ao clicar no botão
+
       navList.classList.toggle('show');
     });
   });

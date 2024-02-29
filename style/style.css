@@ -26,10 +26,20 @@
     display: none;
     list-style: none;
     padding: 0;
+    position: relative; 
+  }
+  
+  .nav-list.show {
+    display: block;
+  }
+  
+  .nav-list.show li {
+    animation: bubble 0.5s ease forwards; 
   }
   
   .nav-list li {
     margin: 10px 0;
+    opacity: 0;
   }
   
   .nav-list li a {
@@ -38,8 +48,16 @@
     font-size: 18px;
   }
   
-  .show {
-    display: block !important;
+ 
+  @keyframes bubble {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
 
 body{
@@ -269,4 +287,15 @@ body{
 
   #menu{
     display: none;
+  }
+
+  #menu-button{
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 5px;
+    
+  }
+
+  #menu-button:hover{
+    background-color: #F0EDCF;
   }
