@@ -176,19 +176,22 @@ body{
 }
 
 @media screen and (max-width: 430px) {
-    .linkedin-link img {
-        display: none;
+    #menu-button {
+        border-radius: 8px;
+        font-size: 1.4rem;
+        padding: 4px;
+        font-family: var(--fonte-secundaria);
+        margin-left: 20px;
     }
-    #menu-button{
-      border-radius: 8px;
-      font-size: 1.4rem;
-      padding: 3.5px;
-      font-family: var(--fonte-secundaria);
-      margin-left: 20px;
-      
+    .foto {
+        width: 10rem;
+        height: 15rem;
+        margin: -3rem 2rem -50rem -19.8rem;
+    }
+    .apresentacao{
+        padding-bottom: 21rem;
     }
 }
-
 .foto:hover{
     transition: 2s;
     box-shadow:
@@ -296,15 +299,17 @@ body{
     display: none;
 }
 
-#menu-button{
+#menu-button {
     border-radius: 8px;
     font-size: 1.4rem;
     padding: 3.5px;
     font-family: var(--fonte-secundaria);
-    
+    margin-left: 20px;
+    transition: 1s;
 }
 
-#menu-button:hover{
-    transition: 1s;
+.menu-button:hover{
+
     font-size: 1.5rem;
-}}
+}
+}
