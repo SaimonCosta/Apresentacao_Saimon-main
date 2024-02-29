@@ -109,8 +109,8 @@ body{
 }
 
 .foto {
-    height: 45%;
-    width: 35%;
+    height: 35rem;
+    width: 25rem;
     border: 1px solid #000000;
     border-radius: 4.5rem;
     box-shadow:
