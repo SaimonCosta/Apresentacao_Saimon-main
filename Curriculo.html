@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Currículo </title>
     <link rel="stylesheet" href="./style/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script src="./style/JavaScript.js"></script>
 </head>
 <body>
-    <header class="cabecalho"> 
-        <nav class="cabecalho__menu"> 
-        <a class="cabecalho__menu__link" href="index.html"> Home </a>
-        <a class="cabecalho__menu__link" href="about.html"> Sobre Mim </a>
-        <a class="cabecalho__menu__link" href="Curriculo.html"> Meu currículo</a>
+    <header class="cabecalho">
+        <nav class="nav"> 
+          <button id="menu-button">Menu</button>
+          <ul class="nav-list" id="nav-list">
+            <li><a class="cabecalho__menu__link" href="./index.html">Home</a></li>
+            <li><a class="cabecalho__menu__link" href="./about.html">Sobre Mim</a></li>
+            <li><a class="cabecalho__menu__link" href="./Curriculo.html">Meu currículo</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
@@ -38,31 +40,15 @@
             </ul>
             </div>    
         </section>
-        <img class="foto" src="./assets/Saimon.png" alt="Saimon">
+        <div class="linkedin-foto">
+            <a class="linkedin-link" href="https://www.linkedin.com/in/saimon-costa/">
+                <img class="foto" src="./assets/Saimon.png"> 
+            </a>
+        </div>
 
     </main> 
-
-    <footer class="rodape">
-        <p>Desenvolvido por Saimon Costa</p>
-    </footer>
-
-  <script>
-        // Inicialize o efeito Vanta.js como fundo da página
-        VANTA.NET({
-  el: "#your-element-selector",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x553fff,
-  backgroundColor: 0x0
-})
-    </script>
-
-
-    
 </body>
+<footer class="rodape">
+    <p>Desenvolvido por Saimon Costa</p>
+</footer>
 </html>
