@@ -15,6 +15,33 @@
     padding: 0;
 }
 
+.cabecalho {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 10px 0;
+  }
+  
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .show {
+    display: block !important;
+  }
+
 body{
     background: linear-gradient(#000000, #40A2D8);
     box-sizing: border-box;

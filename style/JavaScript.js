@@ -1,4 +1,9 @@
-const hamburger = document.querySelector(".menu-button");
-const nav = document.querySelector(".nav");
-
-hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('menu-button');
+    var navList = document.getElementById('nav-list');
+  
+    button.addEventListener('click', function() {
+      // Alternar a visibilidade da lista de navegação ao clicar no botão
+      navList.classList.toggle('show');
+    });
+  });
