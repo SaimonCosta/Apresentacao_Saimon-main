@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         button.style.animation = 'changeIcon 0.5s ease forwards';
       } else {
         button.textContent = 'Menu';
-        button.style.animation = 'none';
       }
     });
   });
