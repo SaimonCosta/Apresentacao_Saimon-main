@@ -191,7 +191,7 @@ body{
     margin: 0px 0px 5% 50px ;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 375px) and (max-width: 430px) {
     #menu-button {
         border-radius: 8px;
         font-size: 1.4rem;
