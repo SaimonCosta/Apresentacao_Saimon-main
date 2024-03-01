@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria : #ffff;
+    --cor-terciaria: #40A2D8; 
+    --cor-hover: #F0EDCF;
+
+    --fonte-primaria: 'Krona One', sans serif;
+    --fonte-secundaria: 'Montserrat', sans serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nav-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: relative; 
+  }
+  
+  .nav-list.show {
+    display: block;
+  }
+  
+  .nav-list.show li {
+    animation: bubble 0.5s ease forwards; 
+  }
+  
+  .nav-list li {
+    margin: 10px 0;
+    opacity: 0;
+  }
+  
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+ 
+  @keyframes bubble {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+#menu{
+    display: none;
+}
+
+#menu-button {
+    border-radius: 8px;
+    font-size: 1.4rem;
+    padding: 3.5px;
+    font-family: var(--fonte-secundaria);
+    margin-left: 20px;
+    transition: 1s;
+}
+
+#menu-button:hover{
+
+    font-size: 1.5rem;
+}
+
+body{
+    background: linear-gradient(#000000, #40A2D8);
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao{
+    padding: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+    display: flex;
+   
+}
+.cabecalho__menu__link:hover{
+    border-radius: 20px;
+    font-size: 24px;
+    transition: all 1s; 
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria); 
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 15px 0;
+    box-shadow:2px  #000000;
+
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family:  var(--fonte-secundaria);
+    text-shadow: 1px 1px 1px black;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__link{
+    align-items: center;
+    background: #FFFFFF;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #1A202C;
+    display: inline-flex;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    padding: 24px;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease-in-out;
+}
+
+.foto {
+    height: 35rem;
+    width: 25rem;
+    border: 1px solid #000000;
+    border-radius: 4.5rem;
+    box-shadow:
+    inset 0 0 50px #0B60B0, 
+    inset 20px 0 80px #40A2D8,   
+    inset -20px 0 80px rgb(83, 83, 83), 
+    inset 20px 0 300px #40A2D8, 
+    inset -20px 0 300px rgb(83, 83, 83), 
+    0 0 50px rgb(83, 83, 83),            
+    -10px 0 80px #40A2D8,        
+    10px 0 80px rgb(83, 83, 83);
+}
+.linkedin-foto{
+    text-align: center;
+    margin: 0px 0px 5% 50px ;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    #menu-button {
+        border-radius: 8px;
+        font-size: 1.4rem;
+        padding: 4px;
+        font-family: var(--fonte-secundaria);
+        margin-left: 20px;
+    }
+    .foto {
+        width: 10rem;
+        height: 15rem;
+        margin: -3rem 2rem -50rem -20rem;
+    }
+    .apresentacao{
+        padding-bottom: 21rem;
+    }
+    
+.icon-curriculo {
+    height: 12rem;
+    width: 10rem;
+    margin: 10rem -30rem -58rem -15rem;
+    cursor: pointer;
+}
+
+.icon-aboutme {
+  height: 12rem;
+  width: 10rem;
+  margin: 10rem -30rem -48rem -15rem;
+  cursor: pointer;
+}
+}
+.foto:hover{
+    transition: 2s;
+    box-shadow:
+    inset 0 0 50px #0B60B0, 
+    inset 20px 0 80px #40A2D8,   
+    inset -20px 0 80px #F0EDCF, 
+    inset 20px 0 300px #40A2D8, 
+    inset -20px 0 300px #F0EDCF, 
+    0 0 50px #F0EDCF,            
+    -10px 0 80px #40A2D8,        
+    10px 0 80px #F0EDCF;
+}
+
+.apresentacao__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px; 
+}
+
+.apresentacao__links__link:hover{
+    transform: scale(1.1);
+}
+
+.rodape{
+    background-color: #40A2D8;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto li {
+    margin-bottom: 15px;
+}
+
+#your-element-selector {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+#content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+@media screen and (width: 390px) and (height: 844px) {
+   .apresentacao{
+    width: 100%;
+    height: auto;
+   }
+   .apresentacao__conteudo__texto{
+    width: 100%;
+    height: auto;
+   }
+
+
+.border-menu{
+    border: 3px solid #E2E8F0;
+    padding: 4%;
+    border-radius: 20rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtn{
+    background-color: #3498DB;
+    color: white;
+    padding: 17px;
+    font-size:17px;
+    border-radius: 50rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .dropbtn:hover{
+  background-color: #2980B9;
+}
+
+.menu-drop {
+    position: relative;
+    display: inline-block;
+}
+.drop-list {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    text-decoration: none;
+
+  }}
+
+.icon-curriculo {
+    height: 12rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.icon-aboutme {
+  height: 12rem;
+  width: 10rem;
+  cursor: pointer;
+}
