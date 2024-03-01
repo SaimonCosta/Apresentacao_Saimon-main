@@ -191,7 +191,7 @@ body{
     margin: 0px 0px 5% 50px ;
 }
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 1080px) {
     #menu-button {
         border-radius: 8px;
         font-size: 1.4rem;
@@ -208,19 +208,19 @@ body{
         padding-bottom: 21rem;
     }
     
-.icon-curriculo {
+    .icon-curriculo {
     height: 12rem;
     width: 10rem;
     margin: 10rem -30rem -58rem -15rem;
     cursor: pointer;
-}
+    }
 
-.icon-aboutme {
+    .icon-aboutme {
   height: 12rem;
   width: 10rem;
   margin: 10rem -30rem -48rem -15rem;
   cursor: pointer;
-}
+    }
 }
 .foto:hover{
     transition: 2s;
@@ -263,21 +263,6 @@ body{
     margin-bottom: 15px;
 }
 
-#your-element-selector {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
-}
-#content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  color: white;
-  font-family: Arial, sans-serif;
-}
 
 @media screen and (width: 390px) and (height: 844px) {
    .apresentacao{
